@@ -3,7 +3,7 @@ describe('login usuarios', () => {
 
     beforeEach('Home', () =>{
         cy.visit('https://alura-fotos.herokuapp.com')
-        cy.intercept('POST', 'https://alurapic.herokuapp.com/user/login', {
+        cy.intercept('POST', 'https://apialurapic.herokuapp.com/user/login', {
             statusCode: 400
         }).as('stubPost')
 
